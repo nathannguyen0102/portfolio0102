@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div>
+        <a href="#"><h2>NATHAN NGUYEN</h2></a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h2><a href="#id-services">SERVICES</a></h2>
+          </li>
+          <li><a href="#id-contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="img">
+        <div>
+          <a href="#id-contact"><img src="image/2.jpg" alt="self-image" /></a>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="aboutme">ABOUT <span>ME</span></h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero iusto
+          reiciendis a quas labore optio deserunt assumenda dolor deleniti?
+          Laudantium, assumenda officia a corporis perspiciatis ex magni dolorum
+          quaerat
+        </p>
+        <div class="flex">
+          <p class="skill">Skills</p>
+          <p class="education">Education</p>
+        </div>
+        <div class="skill-display">
+          <p>HTML, CSS</p>
+          <p>Javascript</p>
+          <p>Web Design</p>
+        </div>
+        <div class="education-display hidden">
+          <p>high school diploma</p>
+          <p>Associate in Mathematics and Science</p>
+          <p>UCI Bootcamp Grad :D</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="id-services">
+      <div>
+        <div class="container center">
+          <p>What i am Expert in</p>
+          <h2 class="myservices"><span>My</span> Services</h2>
+        </div>
+        <div class="box features container">
+          <div class="affecty">
+            <p>Web Design</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              ducimus laborum provident ea mollitia sit, sunt rerum placeat esse
+              ut.
+            </p>
+            <button>Read More</button>
+          </div>
+          <div class="affecty">
+            <p>Web Development</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              nihil quas obcaecati architecto inventore a libero repellendus,
+              vero deserunt ex?
+            </p>
+            <button>Read More</button>
+          </div>
+          <div class="affecty">
+            <p>Creative Design</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              eligendi aperiam expedita quis! Vel et accusantium asperiores
+              aspernatur doloremque temporibus.
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-me" id="id-contact">
+      <div class="container ct-grid">
+        <div class="ct-div1">
+          <h1 class="ct-h1">Contact <span>Me</span></h1>
+          <div class="ct-mp">
+            <p>
+              <ion-icon class="ii-1" name="mail-outline"></ion-icon>
+            </p>
+            <p>natenguyen@gmail.com</p>
+          </div>
+          <div class="ct-mp">
+            <p>
+              <ion-icon class="ii-1" name="call-outline"></ion-icon>
+            </p>
+            <p>714-851-xxxx</p>
+          </div>
+
+          <ul class="ct-li">
+            <li>
+              <a><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+              <a><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+        <div class="ct-input">
+          <input type="name" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" />
+          <textarea
+            name=""
+            id=""
+            cols="35"
+            rows="10"
+            placeholder="Your Message "
+          ></textarea>
+          <button>Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .querySelector(".education")
+        .addEventListener("click", function () {
+          document.querySelector(".skill-display").classList.add("hidden");
+          document
+            .querySelector(".education-display")
+            .classList.remove("hidden");
+        });
+      document.querySelector(".skill").addEventListener("click", function () {
+        document.querySelector(".education-display").classList.add("hidden");
+        document.querySelector(".skill-display").classList.remove("hidden");
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
